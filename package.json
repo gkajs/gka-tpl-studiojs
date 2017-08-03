@@ -1,0 +1,24 @@
+{
+  "name": "gka-tpl-studiojs",
+  "version": "1.0.0",
+  "description": "gka template canvas studiojs",
+  "main": "index.js",
+  "scripts": {
+  },
+  "homepage": "https://github.com/gkajs/gka-tpl-studiojs",
+  "bugs": {
+    "url": "https://github.com/gkajs/gka-tpl-studiojs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gkajs/gka-tpl-studiojs.git"
+  },
+  "keywords": [
+    "gka",
+    "template",
+    "canvas",
+    "studiojs"
+  ],
+  "author": "joeyguo",
+  "license": "MIT"
+}
