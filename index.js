@@ -48,25 +48,16 @@ module.exports = function (data, opts, tool) {
     data2.sourceW = data.sourceW;
     data2.sourceH = data.sourceH;
 
+    // data2.frames = frames.map(function(frame){
+    //     return [frame.x, frame.y, frame.width, frame.height, frame.offX, frame.offY]
+    // });
+    // tool.writeFile("data.js", `var data = ${JSON.stringify(data2, null, '    ')}`);
+
     data2.frames = frames.map(function(frame){
-        return [frame.x, frame.y, frame.width, frame.height, frame.offX, frame.offY]
-        // var res = {
-        //     "x": frame.x,
-        //     "y": frame.y,
-        //     "offX": frame.offX,
-        //     "offY": frame.offY,
-        // };
-
-        // !isSameWidth && (res["width"] = frame.width);
-        // !isSameHeight && (res["height"] = frame.height);
-        // !isSameSourceW && (res["sourceW"] = frame.sourceW);
-        // !isSameSourceH && (res["sourceW"] = frame.sourceH);
-
-        return res;
+        return JSON.stringify([frame.x, frame.y, frame.width, frame.height, frame.offX, frame.offY])
     });
 
-    tool.writeFile("data.js", `var data = ${JSON.stringify(data, null, '    ')}`);
-    tool.writeFile("data2.js", `var data = ${JSON.stringify(data2, null, '    ')}`);
+    tool.writeFile("data.js", `var data = ${JSON.stringify(data2, null, '    ').replace(/\"\[/ig, "\[").replace(/\]\"/ig, "\]")}`);
     tool.writeFile("gka.html", html(data, prefix, frameduration));
 };
 
