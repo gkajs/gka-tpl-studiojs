@@ -31,6 +31,9 @@ module.exports = function (data, opts, tool) {
             "y": frame.y,
             "offX": frame.offX,
             "offY": frame.offY,
+            "file": frame.file,
+            "w": frame.w,
+            "h": frame.h
         };
 
         !isSameWidth && (res["width"] = frame.width);
@@ -42,9 +45,9 @@ module.exports = function (data, opts, tool) {
     });
 
     var data2 = {};
-    data2.file = data.file;
-    data2.w = data.w;
-    data2.h = data.h;
+    data2.file = data.file || data.frames[0].file;
+    data2.w = data.w || data.frames[0].w;
+    data2.h = data.h || data.frames[0].h;
     data2.sourceW = data.sourceW;
     data2.sourceH = data.sourceH;
 
