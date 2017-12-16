@@ -16,9 +16,9 @@
 # Install
 
 ```sh
-$ sudo npm i gka -g               # install gka
+$ npm i gka -g               # install gka
 
-$ sudo npm i gka-tpl-studiojs -g  # install gka-tpl-studiojs
+$ npm i gka-tpl-studiojs -g  # install gka-tpl-studiojs
 ```
 
 # Usage
