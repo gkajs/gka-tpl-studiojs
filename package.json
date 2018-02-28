@@ -1,6 +1,6 @@
 {
   "name": "gka-tpl-studiojs",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "gka template canvas studiojs",
   "main": "index.js",
   "scripts": {},
@@ -21,6 +21,6 @@
   "author": "joeyguo",
   "license": "MIT",
   "dependencies": {
-    "gka-utils": "0.0.1"
+    "gka-utils": "^0.0.3"
   }
 }

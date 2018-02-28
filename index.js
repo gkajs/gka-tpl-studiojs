@@ -4,7 +4,7 @@ var html = require("./lib/html");
 
 module.exports = function (data, opts, cb) {
     
-    var dir = opts.imageDir;
+    var dir = opts.imgOutput;
 
     function run(data, opts, key) {
         var name = (key? key + '-' : '') + 'gka',
@@ -36,3 +36,11 @@ module.exports = function (data, opts, cb) {
 
     cb && cb();
 }
+
+module.exports.config = function(opts) {
+    // console.log(opts)
+    return {
+        crop: 'any',
+        sprites: true,
+    }
+};
