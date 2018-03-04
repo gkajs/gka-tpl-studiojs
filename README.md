@@ -2,7 +2,7 @@
 
 ## gka-tpl-studiojs
 
-<a href="https://www.npmjs.org/package/gka-tpl-studiojs"><img src="https://img.shields.io/npm/v/gka-tpl-canvas.svg?style=flat"></a>
+<a href="https://www.npmjs.org/package/gka-tpl-studiojs"><img src="https://img.shields.io/npm/v/gka-tpl-studiojs.svg?style=flat"></a>
 <a href="https://github.com/joeyguo/gka-tpl-studiojs#license"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
 
 [gka](https://github.com/joeyguo/gka) 文件生成模板，一键式图片资源优化，生成序列帧动画文件。
